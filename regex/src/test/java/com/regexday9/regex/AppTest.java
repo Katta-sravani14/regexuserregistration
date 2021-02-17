@@ -1,5 +1,6 @@
 package com.regexday9.regex;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -13,8 +14,9 @@ public class AppTest
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void CheckMobile_ShouldReturn_true()
     {
-        assertTrue( true );
+        boolean result=regex.mobile();
+        assertEquals(result, true);
     }
 }
